@@ -1,0 +1,119 @@
+#
+# .gitignore
+#
+
+## Temp & Backup Files ##
+
+*~
+*.bak
+*.tmp
+
+
+## Prerequisites ##
+
+*.d
+
+
+## Object files ##
+
+*.o
+*.ko
+*.obj
+*.elf
+
+
+## Linker output ##
+
+*.ilk
+*.map
+*.exp
+
+
+## Precompiled Headers ##
+
+*.gch
+*.pch
+
+
+## Libraries ##
+
+*.lib
+*.a
+*.la
+*.lo
+
+
+## Shared objects (inc. Windows DLLs) ##
+
+*.dll
+*.so
+*.so.*
+*.dylib
+
+
+## Executables ##
+
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+ardop2ofdm
+
+
+## Debug files ##
+
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+
+## Kernel Module Compile Results ##
+
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+
+## CMake build directories ##
+
+build/
+build-*/
+
+
+## doxygen output ##
+
+doc/doxygen/docbook/
+doc/doxygen/html/
+doc/doxygen/latex/
+doc/doxygen/rtf/
+doc/doxygen/xml/
+doc/doxygen/doxyTags.xml
+doc/doxygen/doxygen.log
+
+
+## JetBrains IDE ##
+
+.idea/
+cmake-*/
+
+
+## QT Creator IDE ##
+
+CMakeLists.txt.user
+
+
+## VSCode ##
+
+.vscode/
+
+
+## Misc Files ##
+
+deploy_doxygen.fish
