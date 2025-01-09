@@ -1,0 +1,49 @@
+/**
+ * \file Version.h
+ * \brief Provides version information to the ARDOP Modem
+ */
+
+#ifndef VERSION_H_
+#define VERSION_H_
+
+/**
+ * \defgroup version Version Information
+ *
+ * @{
+ */
+
+
+/*! \brief The name of the product */
+const char ProductName[] = "ARDOP TNC";
+
+#if !defined(VERSION_FROM_BUILD_SYSTEM)
+/**
+ * \brief The version of the product
+ *
+ * \note This is the hard-coded version; it's used when \c VERSION_FROM_BUILD_SYSTEM is not defined at compilation time.
+ */
+const char ProductVersion[] = "2.0.3.40-BPQ-OFDM";
+#else
+/**
+ * \brief The version of the product
+ *
+ * \note This is generated dynamically by CMake, and is used when \c VERSION_FROM_BUILD_SYSTEM is defined at compilation
+ *       time.
+ */
+const char ProductVersion[] = "@VER_MAJOR@.@VER_MINOR@.@VER_PATCH@.@VER_SUBPATCH@-@VER_SUFFIX@";
+#endif
+
+// 4.1s (Sept 2021)
+//		Add GUI Support
+//		Improve GUI Support
+//		Add L/R soundcard and LOGDIR Options
+//		Add EXTRADELAY parameter
+//		Add CM108 PTT
+
+
+/**
+ * @}
+ */
+
+
+#endif	/* !VERSION_H_ */
